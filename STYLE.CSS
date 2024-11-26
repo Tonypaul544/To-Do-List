@@ -95,6 +95,10 @@ ul li {
   font-weight: 600;
   line-height: 40px;
   cursor: pointer;
+  background-color: aliceblue;
+  padding: 5px;
+  outline: none;
+  border: 1px solid lightgray;
 }
 
 ul li span {

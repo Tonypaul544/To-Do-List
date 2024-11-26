@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="STYLE.CSS">
+  <link rel="shortcut icon" href="images/pat_task-removebg-preview.png" type="image/x-icon">
+
+  <title>TO-DO LIST</title>
+</head>
+<body>
+  <div class="list-container">
+    <div class="row">
+      <h1 class="list-header">To-Do List</h1>
+      <img src="images/pat_task-removebg-preview.png" alt="" class="logo">
+    </div>
+
+    <form action="submit-form">
+      <input type="text" placeholder="Add Your Text Here..." id="input-box">
+      <button type="button" class="submit-ntb" onclick="addTask()">Add</button>
+    </form>
+
+    <ul class="list-items" id="list-items">
+      <!-- <li class="list">List 1</li>
+      <li class="list">List 2</li>
+      <li class="Checked">List 3</li> -->
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

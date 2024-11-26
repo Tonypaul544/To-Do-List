@@ -1,0 +1,139 @@
+
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(49, 38, 122);
+  height: 100vh;
+}
+
+.list-container {
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 2px aliceblue;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.row .list-header{
+  font-size: 28px;
+  cursor:grab;
+}
+
+.row {
+  width: fit-content;
+  height: 40px;
+  align-items: center;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+form {
+  width: 350px;
+  background-color: lightgray;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+
+}
+
+input {
+  width: 95%;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  font-size: 18px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  outline: 1px solid aliceblue;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list-items {
+  margin: 20px auto;
+  padding: 5px 40px;
+  position: relative;
+  width: 300px;
+  /* background-color: brown; */
+}
+
+ul li {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 28px;
+  line-height: 30px;
+  color: coral;
+  text-align: center;
+}
+
+ul li span:hover {
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 12px;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-image: url(images/pat_task-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  top: 15px;
+  left: 0px;
+  
+}
+
+ul li.Checked {
+  text-decoration: line-through;
+}
+
+ul li.Checked::before {
+  background-image: url(images/pat_task-removebg-preview.png);
+
+}
